@@ -64,3 +64,15 @@ db.categorias.insertMany([
         nombre: "Frutas"
     }
 ])
+//
+db.productos.update({
+    nombre: "Arroz"
+}, {
+    $set: {
+        nombre: "Rice"
+    }
+});
+//
+db.productos.deleteOne({
+    _id: ObjectId("64dac8893f15c60286fdd377")
+})
